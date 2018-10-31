@@ -1,4 +1,4 @@
-import {WEB_HOST,SUCCESS_CODE} form "./const.js"
+import {WEB_HOST, SUCCESS_CODE} from "./const.js";
 
 const app = getApp()
 
@@ -45,4 +45,14 @@ function LoginSuccessCallback(res){
 	// 存储用户的userId,accessToken之类的信息
 	app.global.user_id = res.info.user_id;
 	app.global.access_token = res.info.access_token;
+}
+
+/**
+ * 获取用户登录态信息
+ */
+function GetUserLoginInfo(){
+	return {
+		user_id: app.global.user_id,
+		access_token: app.global.access_token
+	}
 }

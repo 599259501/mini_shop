@@ -1,5 +1,5 @@
 {
-  "cloud": true,
+  "cloud": false,
   "pages": [
     "pages/index/index",
     "pages/userConsole/userConsole",

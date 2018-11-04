@@ -1,4 +1,4 @@
-import {WEB_HOST,SUCCESS_CODE} form "./const.js"
+import {WEB_HOST,SUCCESS_CODE} from "./const.js"
 
 const app = getApp()
 
@@ -45,4 +45,28 @@ function LoginSuccessCallback(res){
 	// 存储用户的userId,accessToken之类的信息
 	app.global.user_id = res.info.user_id;
 	app.global.access_token = res.info.access_token;
+}
+
+/**
+ * 获取用户微信授权信息
+ */
+function GetWxUserInfo(){
+	return new Promise((resolve, reject)=> {
+		wx.getSetting({
+			success: res=>{
+				wx.getUserInfo({
+					success: function(res){
+						resolve(res);
+					},
+					fail: function(res){
+						reject(res);
+					}
+				});
+			}
+		})
+	});
+}
+
+export {
+	GetWxUserInfo
 }

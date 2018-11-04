@@ -1,7 +1,10 @@
 import {WEB_HOST} from "./const.js"
 
+/*
+    上传文件
+ */
 function uploadFile(file_name, form_data, callback, uptask){
-	if typeof(callback) !== "function" {
+    if (typeof(callback) !== "function") {
 		throw "callback must be function type";
 	}
 

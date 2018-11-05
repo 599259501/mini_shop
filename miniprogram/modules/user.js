@@ -52,7 +52,6 @@ function LoginSuccessCallback(res){
 }
 
 /**
-<<<<<<< .merge_file_a09120
  * 获取用户登录态信息
  */
 function GetUserLoginInfo(){
@@ -60,7 +59,8 @@ function GetUserLoginInfo(){
 		user_id: app.global.user_id,
 		access_token: app.global.access_token
 	}
-=======
+}
+/*
  * 获取用户微信授权信息
  */
 function GetWxUserInfo(){
@@ -82,5 +82,4 @@ function GetWxUserInfo(){
 
 export {
 	GetWxUserInfo
->>>>>>> .merge_file_a08876
 }

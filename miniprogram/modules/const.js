@@ -9,9 +9,6 @@ const LOG_LEVEL = "debug"
 export {
 	WEB_HOST,
 	SUCCESS_CODE,
-<<<<<<< .merge_file_a09808
-	LOG_LEVEL
-=======
+	LOG_LEVEL,
 	HTTP_SUCC_CODE
->>>>>>> .merge_file_a08808
 }

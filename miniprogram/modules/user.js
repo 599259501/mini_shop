@@ -1,4 +1,8 @@
+<<<<<<< .merge_file_a09120
 import {WEB_HOST, SUCCESS_CODE} from "./const.js";
+=======
+import {WEB_HOST,SUCCESS_CODE} from "./const.js"
+>>>>>>> .merge_file_a08876
 
 const app = getApp()
 
@@ -48,6 +52,7 @@ function LoginSuccessCallback(res){
 }
 
 /**
+<<<<<<< .merge_file_a09120
  * 获取用户登录态信息
  */
 function GetUserLoginInfo(){
@@ -55,4 +60,27 @@ function GetUserLoginInfo(){
 		user_id: app.global.user_id,
 		access_token: app.global.access_token
 	}
+=======
+ * 获取用户微信授权信息
+ */
+function GetWxUserInfo(){
+	return new Promise((resolve, reject)=> {
+		wx.getSetting({
+			success: res=>{
+				wx.getUserInfo({
+					success: function(res){
+						resolve(res);
+					},
+					fail: function(res){
+						reject(res);
+					}
+				});
+			}
+		})
+	});
+}
+
+export {
+	GetWxUserInfo
+>>>>>>> .merge_file_a08876
 }

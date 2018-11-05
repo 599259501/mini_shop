@@ -1,5 +1,6 @@
 import {WEB_HOST,LOG_LEVEL} from "./const.js"
 
+<<<<<<< .merge_file_a07732
 /**
  * 上传文件
  * @param  {[type]}   file_name 文件名
@@ -10,6 +11,13 @@ import {WEB_HOST,LOG_LEVEL} from "./const.js"
  */
 function UploadFile(file_name, form_data, callback, uptask){
 	if (typeof(callback) !== "function") {
+=======
+/*
+    上传文件
+ */
+function uploadFile(file_name, form_data, callback, uptask){
+    if (typeof(callback) !== "function") {
+>>>>>>> .merge_file_a10180
 		throw "callback must be function type";
 	}
 

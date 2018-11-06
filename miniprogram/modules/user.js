@@ -75,7 +75,6 @@ function GetWxUserInfo(){
 		})
 	});
 }
-
 export {
 	GetWxUserInfo
 }

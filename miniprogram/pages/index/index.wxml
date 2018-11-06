@@ -10,19 +10,84 @@
     <view slot="action" bind:tap="onSearch">搜索</view>
   </van-search>
 
-  <van-row>
-    <van-col span="8">
-      <img src="http://pic.qiantucdn.com/58pic/19/15/15/18s58PICX7R.jpg!/fw/120/compress/true/clip/120x160a0a0"/>
-    </van-col>
-    <van-col span="8">
-    
-    </van-col>
-    <van-col span="8">
-    
-    </van-col>
-  </van-row>
+  <!---这里是图片轮播地方-->
+  <view>
+    <swiper indicator-dots="true" autoplay="true">
+      <block wx:for="{{imgUrls}}">
+        <swiper-item>
+          <image src="{{item}}" style="width:100%;" mode="aspectFill"/>
+        </swiper-item>
+      </block>
+    </swiper>
+  </view>
 
-  <van-tabbar active="{{ active }}" custom-class="tabbar" bind:change="onChange">
+  <!-- 每一种模块 -->
+  <view>
+    <!--模块标题-->
+    <van-nav-bar
+      title="最新商品"
+      right-text="查看更多>>>"
+      bind:click-right=""
+    />
+    <!-- 店铺首页每个模块 -->
+    <van-row>
+      <van-col span="8">
+        <image src="../../images/120x160a0a0.jpg" class="list_img"></image>
+      </van-col>
+      <van-col span="8">
+        <image src="../../images/120x160a0a0.jpg" class="list_img"></image>
+      </van-col>
+      <van-col span="8">
+        <image src="../../images/120x160a0a0.jpg" class="list_img"></image>
+      </van-col>
+    </van-row>
+  </view>
+
+   <!-- 每一种模块 -->
+  <view>
+    <!--模块标题-->
+    <van-nav-bar
+      title="最新商品"
+      right-text="查看更多>>>"
+      bind:click-right=""
+    />
+    <!-- 店铺首页每个模块 -->
+    <van-row>
+      <van-col span="8">
+        <image src="../../images/120x160a0a0.jpg" class="list_img"></image>
+      </van-col>
+      <van-col span="8">
+        <image src="../../images/120x160a0a0.jpg" class="list_img"></image>
+      </van-col>
+      <van-col span="8">
+        <image src="../../images/120x160a0a0.jpg" class="list_img"></image>
+      </van-col>
+    </van-row>
+  </view>
+
+   <!-- 每一种模块 -->
+  <view>
+    <!--模块标题-->
+    <van-nav-bar
+      title="最新商品"
+      right-text="查看更多>>>"
+      bind:click-right=""
+    />
+    <!-- 店铺首页每个模块 -->
+    <van-row>
+      <van-col span="8">
+        <image src="../../images/120x160a0a0.jpg" class="list_img"></image>
+      </van-col>
+      <van-col span="8">
+        <image src="../../images/120x160a0a0.jpg" class="list_img"></image>
+      </van-col>
+      <van-col span="8">
+        <image src="../../images/120x160a0a0.jpg" class="list_img"></image>
+      </van-col>
+    </van-row>
+  </view>
+
+  <van-tabbar active="{{ tabbarActive }}" custom-class="tabbar" bind:change="tabbarChange">
     <van-tabbar-item icon="shop">首页</van-tabbar-item>
     <van-tabbar-item icon="chat" dot>分类</van-tabbar-item>
     <van-tabbar-item icon="records" info="5">购物车</van-tabbar-item>

@@ -8,6 +8,7 @@
       "van-icon": "../../nodes/vant-weapp/dist/icon/index",
       "van-card": "../../nodes/vant-weapp/dist/card/index",
       "van-row": "../../nodes/vant-weapp/dist/row/index",
-      "van-col": "../../nodes/vant-weapp/dist/col/index"
+      "van-col": "../../nodes/vant-weapp/dist/col/index",
+      "van-nav-bar": "../../nodes/vant-weapp/dist/nav-bar/index"
   }
 }

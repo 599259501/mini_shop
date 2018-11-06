@@ -1,8 +1,4 @@
-<<<<<<< .merge_file_a09120
 import {WEB_HOST, SUCCESS_CODE} from "./const.js";
-=======
-import {WEB_HOST,SUCCESS_CODE} from "./const.js"
->>>>>>> .merge_file_a08876
 
 const app = getApp()
 

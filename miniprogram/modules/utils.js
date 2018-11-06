@@ -7,7 +7,7 @@ import {WEB_HOST,LOG_LEVEL} from "./const.js"
  * @param  {[type]}   uptask    进度函数
  * @return {[type]}             [description]
  */
-function uploadFile(file_name, form_data, callback, uptask){
+function UploadFile(file_name, form_data, callback, uptask){
   if (typeof(callback) !== "function") {
 		throw "callback must be function type";
 	}

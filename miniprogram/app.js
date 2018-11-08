@@ -3,7 +3,7 @@ import {WEB_HOST} from './modules/const.js'
 
 App({
   onLaunch: function () {
-    this.global = {
+    this.globalData = {
       user_id: "",
       access_token: "",
     }

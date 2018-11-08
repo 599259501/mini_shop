@@ -1,10 +1,14 @@
-import {WEB_HOST} from "./const.js"
-
-/*
-    上传文件
+import {WEB_HOST,LOG_LEVEL} from "./const.js"
+/**
+ * 上传文件
+ * @param  {[type]}   file_name 文件名
+ * @param  {[type]}   form_data 表单数据
+ * @param  {Function} callback  成功回调函数
+ * @param  {[type]}   uptask    进度函数
+ * @return {[type]}             [description]
  */
-function uploadFile(file_name, form_data, callback, uptask){
-    if (typeof(callback) !== "function") {
+function UploadFile(file_name, form_data, callback, uptask){
+  if (typeof(callback) !== "function") {
 		throw "callback must be function type";
 	}
 
@@ -21,6 +25,16 @@ function uploadFile(file_name, form_data, callback, uptask){
     return uploadTask
 }
 
+/**
+ * 打印日志
+ */
+function Logging(msg){
+  if (LOG_LEVEL == "debug") {
+    console.log(msg)
+  }
+}
+
 export {
-	uploadFile
+	UploadFile,
+  Logging
 }

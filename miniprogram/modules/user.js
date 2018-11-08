@@ -1,4 +1,4 @@
-import {WEB_HOST,SUCCESS_CODE} from "./const.js"
+import {WEB_HOST, SUCCESS_CODE} from "./const.js";
 
 const app = getApp()
 
@@ -48,6 +48,15 @@ function LoginSuccessCallback(res){
 }
 
 /**
+ * 获取用户登录态信息
+ */
+function GetUserLoginInfo(){
+	return {
+		user_id: app.global.user_id,
+		access_token: app.global.access_token
+	}
+}
+/*
  * 获取用户微信授权信息
  */
 function GetWxUserInfo(){
@@ -66,7 +75,6 @@ function GetWxUserInfo(){
 		})
 	});
 }
-
 export {
 	GetWxUserInfo
 }

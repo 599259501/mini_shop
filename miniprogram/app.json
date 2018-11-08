@@ -1,5 +1,5 @@
 {
-  "cloud": true,
+  "cloud": false,
   "pages": [
     "pages/index/index",
     "pages/userConsole/userConsole",
@@ -13,7 +13,7 @@
     "backgroundColor": "#F6F6F6",
     "backgroundTextStyle": "light",
     "navigationBarBackgroundColor": "#F6F6F6",
-    "navigationBarTitleText": "云开发 QuickStart",
+    "navigationBarTitleText": "店铺商城",
     "navigationBarTextStyle": "black"
   }
 }

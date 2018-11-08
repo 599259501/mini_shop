@@ -1,1 +1,14 @@
-{}
+{
+    "usingComponents": {
+      "van-button": "../../nodes/vant-weapp/dist/button/index",
+      "van-tabbar": "../../nodes/vant-weapp/dist/tabbar/index",
+      "van-tabbar-item": "../../nodes/vant-weapp/dist/tabbar-item/index",
+      "van-search": "../../nodes/vant-weapp/dist/search/index",
+      "van-loading": "../../nodes/vant-weapp/dist/loading/index",
+      "van-icon": "../../nodes/vant-weapp/dist/icon/index",
+      "van-card": "../../nodes/vant-weapp/dist/card/index",
+      "van-row": "../../nodes/vant-weapp/dist/row/index",
+      "van-col": "../../nodes/vant-weapp/dist/col/index",
+      "van-nav-bar": "../../nodes/vant-weapp/dist/nav-bar/index"
+  }
+}

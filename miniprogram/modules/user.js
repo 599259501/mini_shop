@@ -75,6 +75,12 @@ function GetWxUserInfo(){
 		})
 	});
 }
+/**
+ * 获取用户的基本信息
+ */
+function GetUserBaseInfo(){
+}
+
 export {
 	GetWxUserInfo
 }

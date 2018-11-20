@@ -28,9 +28,9 @@ function UploadFile(file_name, form_data, callback, uptask){
 /**
  * 打印日志
  */
-function Logging(msg, ... params){
+function Logging(msg, ...params){
   if (LOG_LEVEL == "debug") {
-    console.log(msg,params)
+    console.log(msg, ...params)
   }
 }
 

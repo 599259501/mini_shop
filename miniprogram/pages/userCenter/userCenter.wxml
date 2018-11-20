@@ -1,0 +1,16 @@
+<!--pages/userCenter/userCenter.wxml-->
+<view>
+    <!--头像信息-->
+    <van-row>
+        <van-col span="8">span: 8</van-col>
+        <van-col span="8">span: 8</van-col>
+        <van-col span="8">span: 8</van-col>
+    </van-row>
+    <!--订单信息-->
+        
+    <!--收货地址-->
+
+    <!--优惠券-->
+
+    <!--我的消息-->
+</view>

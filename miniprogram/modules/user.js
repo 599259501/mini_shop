@@ -120,6 +120,12 @@ function LoadLocalSession(){
 	}
 	return false;
 }
+/**
+ * 获取用户的基本信息
+ */
+function GetUserBaseInfo(){
+}
+
 export {
 	GetWxUserInfo,
 	UserLogin,

@@ -10,12 +10,13 @@ function POST_SERVER(request_uri, form_data){
             url: WEB_HOST+"/"+request_uri,
             data: form_data,
             header: {
-                'content-type': 'application/x-www-form-urlencoded',
+                'content-type': 'application/x-www-form-urlencoded'
             },
             method: "POST",
             success:(res)=>{
                 if (res.statusCode !== HTTP_SUCC_CODE && res.data.code !== SUCCESS_CODE){
-                    resolve(res);
+                    // 如果是登录态失效，那么就让客户重新登录
+                    reject(res);
                     return;
                 }
                 resolve(res);
@@ -60,4 +61,8 @@ function GET_SERVER(request_uri){
             }
         });
     });
+}
+
+export {
+    POST_SERVER
 }

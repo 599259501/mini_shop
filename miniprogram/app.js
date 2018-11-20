@@ -6,6 +6,8 @@ App({
     this.globalData = {
       user_id: "",
       access_token: "",
-    }
+      canIUse: false,
+      user_info: {}
+    };
   }
 })

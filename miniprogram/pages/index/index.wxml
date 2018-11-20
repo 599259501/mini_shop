@@ -9,7 +9,7 @@
   >
     <view slot="action" bind:tap="onSearch">搜索</view>
   </van-search>
-
+  
   <!---这里是图片轮播地方-->
   <view>
     <swiper indicator-dots="true" autoplay="true">

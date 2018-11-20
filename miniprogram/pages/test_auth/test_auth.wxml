@@ -1,0 +1,2 @@
+<!--miniprogram/pages/test_auth.wxml-->
+<button open-type='getUserInfo' bindgetuserinfo="bindGetUserInfo">获取授权</button>
